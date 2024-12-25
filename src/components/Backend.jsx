@@ -3,7 +3,7 @@ import React from "react";
 const Backend = () => {
   return (
     <>
-      <section className="container mx-auto px-5 md:px-10 h-screen flex flex-col items-center justify-center snap-start">
+      <section className="container mx-auto px-2 md:px-10 h-screen flex flex-col items-center justify-center snap-start">
         <div className="w-full">
           <div>
             <h3 className="relative text-[28px] text-white font-bold mb-8 ps-[18px] before:content-[''] before:absolute before:left-0 before:top-0 before:h-full before:w-[5px] before:bg-primary">
