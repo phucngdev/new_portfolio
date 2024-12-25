@@ -3,17 +3,17 @@ import React from "react";
 const Certifications = () => {
   return (
     <>
-      <section className="container mx-auto px-5 md:px-10 h-screen flex flex-col items-center justify-center snap-start">
+      <section className="container mx-auto px-2 md:px-10 h-screen flex flex-col items-center justify-center snap-start">
         <h2 className="text-center text-primary mb-8 text-3xl md:text-[40px] font-jetbrains font-bold">
           Certifications &amp; Awards
         </h2>
         <div className="">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-8">
-            <div className="p-5 md:p-5 rounded-xl text-white h-[170px] cursor-pointer hover:scale-105 transition duration-300 bg-[#1e1e1e]">
-              <div className="text-primary text-lg font-semibold mb-2">
+            <div className="p-5 md:p-5 rounded-xl text-white h-[120px] md:h-[170px] cursor-pointer hover:scale-105 transition duration-300 bg-[#1e1e1e]">
+              <div className="text-primary text-base md:text-lg font-semibold mb-2">
                 2022
               </div>
-              <h3 className="flex items-center gap-5 mb-5 font-bold text-xl">
+              <h3 className="flex items-center gap-5 mb-5 font-bold text-lg md:text-xl">
                 <div className="text-primary text-3xl">
                   <svg
                     stroke="currentColor"
@@ -30,11 +30,11 @@ const Certifications = () => {
                 Udacity React Certification
               </h3>
             </div>
-            <div className="p-5 md:p-5 rounded-xl text-white h-[170px] cursor-pointer hover:scale-105 transition duration-300 bg-[#1e1e1e]">
-              <div className="text-primary text-lg font-semibold mb-2">
+            <div className="p-5 md:p-5 rounded-xl text-white h-[120px] md:h-[170px] cursor-pointer hover:scale-105 transition duration-300 bg-[#1e1e1e]">
+              <div className="text-primary text-base md:text-lg font-semibold mb-2">
                 2022
               </div>
-              <h3 className="flex items-center gap-5 mb-5 font-bold text-xl">
+              <h3 className="flex items-center gap-5 mb-5 font-bold text-lg md:text-xl">
                 <div className="text-primary text-3xl">
                   <svg
                     stroke="currentColor"
@@ -51,14 +51,14 @@ const Certifications = () => {
                 Upper Intermediate English Score (equal 800 TOEIC)
               </h3>
             </div>
-            <div className="p-5 md:p-5 rounded-xl text-white h-[170px] cursor-pointer hover:scale-105 transition duration-300 bg-[#1e1e1e] relative">
+            <div className="p-5 md:p-5 rounded-xl text-white h-[120px] md:h-[170px] cursor-pointer hover:scale-105 transition duration-300 bg-[#1e1e1e] relative">
               <div className="absolute top-2 right-2 bg-primary rounded-lg py-1 px-2 text-[12px]">
                 In Plan :P
               </div>
-              <div className="text-primary text-lg font-semibold mb-2">
+              <div className="text-primary text-base md:text-lg font-semibold mb-2">
                 2025
               </div>
-              <h3 className="flex items-center gap-5 mb-5 font-bold text-xl">
+              <h3 className="flex items-center gap-5 mb-5 font-bold text-lg md:text-xl">
                 <div className="text-primary text-3xl">
                   <svg
                     stroke="currentColor"
@@ -75,14 +75,14 @@ const Certifications = () => {
                 Google Cloud Certification
               </h3>
             </div>
-            <div className="p-5 md:p-5 rounded-xl text-white h-[170px] cursor-pointer hover:scale-105 transition duration-300 bg-[#1e1e1e] relative">
+            <div className="p-5 md:p-5 rounded-xl text-white h-[120px] md:h-[170px] cursor-pointer hover:scale-105 transition duration-300 bg-[#1e1e1e] relative">
               <div className="absolute top-2 right-2 bg-primary rounded-lg py-1 px-2 text-[12px]">
                 In Plan :P
               </div>
-              <div className="text-primary text-lg font-semibold mb-2">
+              <div className="text-primary text-base md:text-lg font-semibold mb-2">
                 2025
               </div>
-              <h3 className="flex items-center gap-5 mb-5 font-bold text-xl">
+              <h3 className="flex items-center gap-5 mb-5 font-bold text-lg md:text-xl">
                 <div className="text-primary text-3xl">
                   <svg
                     stroke="currentColor"

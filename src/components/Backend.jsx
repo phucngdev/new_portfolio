@@ -11,8 +11,8 @@ const Backend = () => {
             </h3>
 
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-8">
-              <div className="flex items-center gap-5 p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
-                <div className="text-5xl text-primary">
+              <div className="flex items-center gap-5 p-3 md:p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
+                <div className="text-2xl md:text-5xl text-primary">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
@@ -36,8 +36,8 @@ const Backend = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center gap-5 p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
-                <div className="text-5xl text-primary">
+              <div className="flex items-center gap-5 p-3 md:p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
+                <div className="text-2xl md:text-5xl text-primary">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
@@ -61,8 +61,8 @@ const Backend = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center gap-5 p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
-                <div className="text-5xl text-primary">
+              <div className="flex items-center gap-5 p-3 md:p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
+                <div className="text-2xl md:text-5xl text-primary">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
@@ -86,8 +86,8 @@ const Backend = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center gap-5 p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
-                <div className="text-5xl text-primary">
+              <div className="flex items-center gap-5 p-3 md:p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
+                <div className="text-2xl md:text-5xl text-primary">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
@@ -111,8 +111,8 @@ const Backend = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center gap-5 p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
-                <div className="text-5xl text-primary">
+              <div className="flex items-center gap-5 p-3 md:p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
+                <div className="text-2xl md:text-5xl text-primary">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
@@ -136,8 +136,8 @@ const Backend = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center gap-5 p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
-                <div className="text-5xl text-primary">
+              <div className="flex items-center gap-5 p-3 md:p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
+                <div className="text-2xl md:text-5xl text-primary">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"

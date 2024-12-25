@@ -3,7 +3,7 @@ import React from "react";
 const Skill = () => {
   return (
     <>
-      <section className="container mx-auto px-5 md:px-10 h-screen flex flex-col items-center justify-center snap-start">
+      <section className="container mx-auto px-2 md:px-10 h-screen flex flex-col items-center justify-center snap-start">
         <h2 className="text-center text-primary mb-8 text-3xl md:text-[40px] font-jetbrains font-bold">
           Skills &amp; Expertise
         </h2>
@@ -13,8 +13,8 @@ const Skill = () => {
               Core Technologies
             </h3>
             <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-8">
-              <div className="flex items-center gap-5 p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
-                <div className="text-5xl text-primary">
+              <div className="flex items-center gap-5 p-3 md:p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
+                <div className="text-2xl md:text-5xl text-primary">
                   <svg
                     stroke="currentColor"
                     fill="none"
@@ -45,8 +45,8 @@ const Skill = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center gap-5 p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
-                <div className="text-5xl text-primary">
+              <div className="flex items-center gap-5 p-3 md:p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
+                <div className="text-2xl md:text-5xl text-primary">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
@@ -71,8 +71,8 @@ const Skill = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center gap-5 p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
-                <div className="text-5xl text-primary">
+              <div className="flex items-center gap-5 p-3 md:p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
+                <div className="text-2xl md:text-5xl text-primary">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
@@ -96,8 +96,8 @@ const Skill = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center gap-5 p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
-                <div className="text-5xl text-primary">
+              <div className="flex items-center gap-5 p-3 md:p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
+                <div className="text-2xl md:text-5xl text-primary">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
@@ -121,33 +121,9 @@ const Skill = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center gap-5 p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
-                <div className="text-5xl text-primary">
-                  <svg
-                    stroke="currentColor"
-                    fill="currentColor"
-                    strokeWidth={0}
-                    role="img"
-                    viewBox="0 0 24 24"
-                    height="1em"
-                    width="1em"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path d="M24 24H0V0h24L12 12Z" />
-                  </svg>
-                </div>
-                <div className="flex flex-col justify-between">
-                  <h4 className="text-[13px] md:text-[19px] mb-2 font-semibold">
-                    Kotlin
-                  </h4>
-                  <div className="text-[14px] mb-1">2 years</div>
-                  <div className="text-[14px] mt-1 text-primary font-semibold">
-                    Intermediate
-                  </div>
-                </div>
-              </div>
-              <div className="flex items-center gap-5 p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
-                <div className="text-5xl text-primary">
+
+              <div className="flex items-center gap-5 p-3 md:p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
+                <div className="text-2xl md:text-5xl text-primary">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
@@ -171,8 +147,8 @@ const Skill = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center gap-5 p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
-                <div className="text-5xl text-primary">
+              <div className="flex items-center gap-5 p-3 md:p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
+                <div className="text-2xl md:text-5xl text-primary">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
@@ -196,8 +172,8 @@ const Skill = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center gap-5 p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
-                <div className="text-5xl text-primary">
+              <div className="flex items-center gap-5 p-3 md:p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
+                <div className="text-2xl md:text-5xl text-primary">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
@@ -221,8 +197,8 @@ const Skill = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex items-center gap-5 p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
-                <div className="text-5xl text-primary">
+              <div className="flex items-center gap-5 p-3 md:p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
+                <div className="text-2xl md:text-5xl text-primary">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"

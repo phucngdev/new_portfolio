@@ -3,7 +3,7 @@ import React from "react";
 const Touch = () => {
   return (
     <>
-      <section className="container mx-auto px-5 md:px-10 h-screen flex flex-col items-center justify-center snap-start">
+      <section className="container mx-auto px-2 md:px-10 h-screen flex flex-col items-center justify-center snap-start">
         <h2 className="text-center text-primary mb-8 text-3xl md:text-[40px] font-jetbrains font-bold">
           Get In Touch
         </h2>

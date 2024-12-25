@@ -3,7 +3,7 @@ import React from "react";
 const Infomation = () => {
   return (
     <>
-      <section className="container mx-auto h-screen px-5 md:px-10 flex items-center justify-center snap-start">
+      <section className="container mx-auto h-screen px-2 md:px-10 flex items-center justify-center snap-start">
         <div className="flex flex-col">
           <h1 className="text-primary text-[50px] md:text-[72px] font-jetbrains font-bold">
             Hello
