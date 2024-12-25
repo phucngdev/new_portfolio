@@ -13,6 +13,7 @@ export default {
         gradient: "gradient 5s ease infinite",
         "move-rotate-1": "move-rotate-1 25s linear infinite",
         "move-rotate-2": "move-rotate-2 25s linear infinite",
+        pacse: "pacse 1s ease-in-out infinite",
       },
       keyframes: {
         gradient: {
@@ -33,6 +34,11 @@ export default {
           "50%": { transform: "translate(30vw, 50vh) rotate(360deg)" },
           "75%": { transform: "translate(10vw, 30vh) rotate(180deg)" },
           "100%": { transform: "translate(0, 0) rotate(0deg)" },
+        },
+        pacse: {
+          "0%": { transform: "scale(1, 1)" },
+          "50%": { opacity: 0.5 },
+          "100%": { transform: "scale(1.4)", opacity: 0 },
         },
       },
     },

@@ -7,9 +7,9 @@ const Certifications = () => {
         <h2 className="text-center text-primary mb-8 text-3xl md:text-[40px] font-jetbrains font-bold">
           Certifications &amp; Awards
         </h2>
-        <div className="">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-8">
-            <div className="p-2 md:p-5 rounded-xl text-white h-[120px] md:h-[170px] cursor-pointer hover:scale-105 transition duration-300 bg-[#1e1e1e]">
+        <div className="w-full">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-8">
+            <div className="p-2 md:p-5 rounded-xl text-white h-[100px] md:h-[170px] cursor-pointer hover:scale-105 transition duration-300 bg-[#1e1e1e]">
               <div className="text-primary text-base md:text-lg font-semibold mb-2">
                 2022
               </div>
@@ -27,10 +27,10 @@ const Certifications = () => {
                     <path d="M97.12 362.63c-8.69-8.69-4.16-6.24-25.12-11.85-9.51-2.55-17.87-7.45-25.43-13.32L1.2 448.7c-4.39 10.77 3.81 22.47 15.43 22.03l52.69-2.01L105.56 507c8 8.44 22.04 5.81 26.43-4.96l52.05-127.62c-10.84 6.04-22.87 9.58-35.31 9.58-19.5 0-37.82-7.59-51.61-21.37zM382.8 448.7l-45.37-111.24c-7.56 5.88-15.92 10.77-25.43 13.32-21.07 5.64-16.45 3.18-25.12 11.85-13.79 13.78-32.12 21.37-51.62 21.37-12.44 0-24.47-3.55-35.31-9.58L252 502.04c4.39 10.77 18.44 13.4 26.43 4.96l36.25-38.28 52.69 2.01c11.62.44 19.82-11.27 15.43-22.03zM263 340c15.28-15.55 17.03-14.21 38.79-20.14 13.89-3.79 24.75-14.84 28.47-28.98 7.48-28.4 5.54-24.97 25.95-45.75 10.17-10.35 14.14-25.44 10.42-39.58-7.47-28.38-7.48-24.42 0-52.83 3.72-14.14-.25-29.23-10.42-39.58-20.41-20.78-18.47-17.36-25.95-45.75-3.72-14.14-14.58-25.19-28.47-28.98-27.88-7.61-24.52-5.62-44.95-26.41-10.17-10.35-25-14.4-38.89-10.61-27.87 7.6-23.98 7.61-51.9 0-13.89-3.79-28.72.25-38.89 10.61-20.41 20.78-17.05 18.8-44.94 26.41-13.89 3.79-24.75 14.84-28.47 28.98-7.47 28.39-5.54 24.97-25.95 45.75-10.17 10.35-14.15 25.44-10.42 39.58 7.47 28.36 7.48 24.4 0 52.82-3.72 14.14.25 29.23 10.42 39.59 20.41 20.78 18.47 17.35 25.95 45.75 3.72 14.14 14.58 25.19 28.47 28.98C104.6 325.96 106.27 325 121 340c13.23 13.47 33.84 15.88 49.74 5.82a39.676 39.676 0 0 1 42.53 0c15.89 10.06 36.5 7.65 49.73-5.82zM97.66 175.96c0-53.03 42.24-96.02 94.34-96.02s94.34 42.99 94.34 96.02-42.24 96.02-94.34 96.02-94.34-42.99-94.34-96.02z" />
                   </svg>
                 </div>
-                Udacity React Certification
+                Rikkei Fullstack Certification
               </h3>
             </div>
-            <div className="p-2 md:p-5 rounded-xl text-white h-[120px] md:h-[170px] cursor-pointer hover:scale-105 transition duration-300 bg-[#1e1e1e]">
+            <div className="p-2 md:p-5 rounded-xl text-white h-[100px] md:h-[170px] cursor-pointer hover:scale-105 transition duration-300 bg-[#1e1e1e]">
               <div className="text-primary text-base md:text-lg font-semibold mb-2">
                 2022
               </div>
@@ -48,10 +48,10 @@ const Certifications = () => {
                     <path d="M152.1 236.2c-3.5-12.1-7.8-33.2-7.8-33.2h-.5s-4.3 21.1-7.8 33.2l-11.1 37.5H163zM616 96H336v320h280c13.3 0 24-10.7 24-24V120c0-13.3-10.7-24-24-24zm-24 120c0 6.6-5.4 12-12 12h-11.4c-6.9 23.6-21.7 47.4-42.7 69.9 8.4 6.4 17.1 12.5 26.1 18 5.5 3.4 7.3 10.5 4.1 16.2l-7.9 13.9c-3.4 5.9-10.9 7.8-16.7 4.3-12.6-7.8-24.5-16.1-35.4-24.9-10.9 8.7-22.7 17.1-35.4 24.9-5.8 3.5-13.3 1.6-16.7-4.3l-7.9-13.9c-3.2-5.6-1.4-12.8 4.2-16.2 9.3-5.7 18-11.7 26.1-18-7.9-8.4-14.9-17-21-25.7-4-5.7-2.2-13.6 3.7-17.1l6.5-3.9 7.3-4.3c5.4-3.2 12.4-1.7 16 3.4 5 7 10.8 14 17.4 20.9 13.5-14.2 23.8-28.9 30-43.2H412c-6.6 0-12-5.4-12-12v-16c0-6.6 5.4-12 12-12h64v-16c0-6.6 5.4-12 12-12h16c6.6 0 12 5.4 12 12v16h64c6.6 0 12 5.4 12 12zM0 120v272c0 13.3 10.7 24 24 24h280V96H24c-13.3 0-24 10.7-24 24zm58.9 216.1L116.4 167c1.7-4.9 6.2-8.1 11.4-8.1h32.5c5.1 0 9.7 3.3 11.4 8.1l57.5 169.1c2.6 7.8-3.1 15.9-11.4 15.9h-22.9a12 12 0 0 1-11.5-8.6l-9.4-31.9h-60.2l-9.1 31.8c-1.5 5.1-6.2 8.7-11.5 8.7H70.3c-8.2 0-14-8.1-11.4-15.9z" />
                   </svg>
                 </div>
-                Upper Intermediate English Score (equal 800 TOEIC)
+                Upper Intermediate English Score
               </h3>
             </div>
-            <div className="p-2 md:p-5 rounded-xl text-white h-[120px] md:h-[170px] cursor-pointer hover:scale-105 transition duration-300 bg-[#1e1e1e] relative">
+            <div className="p-2 md:p-5 rounded-xl text-white h-[100px] md:h-[170px] cursor-pointer hover:scale-105 transition duration-300 bg-[#1e1e1e] relative">
               <div className="absolute top-2 right-2 bg-primary rounded-lg py-1 px-2 text-[12px]">
                 In Plan :P
               </div>
@@ -75,7 +75,7 @@ const Certifications = () => {
                 Google Cloud Certification
               </h3>
             </div>
-            <div className="p-2 md:p-5 rounded-xl text-white h-[120px] md:h-[170px] cursor-pointer hover:scale-105 transition duration-300 bg-[#1e1e1e] relative">
+            <div className="p-2 md:p-5 rounded-xl text-white h-[100px] md:h-[170px] cursor-pointer hover:scale-105 transition duration-300 bg-[#1e1e1e] relative">
               <div className="absolute top-2 right-2 bg-primary rounded-lg py-1 px-2 text-[12px]">
                 In Plan :P
               </div>
@@ -100,6 +100,12 @@ const Certifications = () => {
               </h3>
             </div>
           </div>
+        </div>
+        <div className="relative flex items-center justify-center mt-8">
+          <div className="w-36 h-10 rounded-xl animate-pacse bg-primary"></div>
+          <button className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] h-10 w-36 rounded-xl text-white bg-primary cursor-pointer">
+            See more
+          </button>
         </div>
       </section>
     </>
