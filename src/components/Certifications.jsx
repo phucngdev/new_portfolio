@@ -101,7 +101,7 @@ const Certifications = () => {
             </div>
           </div>
         </div>
-        <div className="relative flex items-center justify-center mt-8">
+        <div className="relative flex items-center justify-center mt-5 md:mt-8">
           <div className="w-36 h-10 rounded-xl animate-pacse bg-primary"></div>
           <button className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] h-10 w-36 rounded-xl text-white bg-primary cursor-pointer">
             See more
