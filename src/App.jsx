@@ -7,6 +7,7 @@ import Tools from "./components/Tools";
 import Education from "./components/Education";
 import Certifications from "./components/Certifications";
 import Touch from "./components/Touch";
+import Projects from "./components/Projects";
 
 const App = () => {
   const [showHello, setShowHello] = useState(true);
@@ -78,6 +79,7 @@ const App = () => {
           <Backend />
           <Tools />
           <Education />
+          <Projects />
           <Certifications />
           <Touch />
         </div>
