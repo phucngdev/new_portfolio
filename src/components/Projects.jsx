@@ -99,8 +99,8 @@ const Projects = () => {
                   <h3 className="text-xl md:text-2xl font-bold mb-4 text-white">
                     Fullstack Developer
                   </h3>
-                  <div className="max-h-[200px] overflow-y-auto md:max-h-none">
-                    <ul className="list-disc text-[#b0b0b0] text-sm md:text-[16px]">
+                  <div className="max-h-[190px] overflow-y-auto md:max-h-none">
+                    <ul className="list-disc list-inside text-[#b0b0b0] text-sm md:text-[16px]">
                       <li className="marker:text-primary">
                         Built front-end applications using ReactJS and
                         TypeScript, focusing on mobile-first development
@@ -238,8 +238,8 @@ const Projects = () => {
                   <h3 className="text-xl md:text-2xl font-bold mb-4 text-white">
                     Fullstack Developer
                   </h3>
-                  <div className="max-h-[200px] overflow-y-auto md:max-h-none">
-                    <ul className="list-disc text-[#b0b0b0] text-sm md:text-[16px]">
+                  <div className="max-h-[190px] overflow-y-auto md:max-h-none">
+                    <ul className="list-disc list-inside text-[#b0b0b0] text-sm md:text-[16px]">
                       <li className="marker:text-primary">
                         Built front-end applications using ReactJS and
                         TypeScript, focusing on mobile-first development
@@ -377,8 +377,8 @@ const Projects = () => {
                   <h3 className="text-xl md:text-2xl font-bold mb-4 text-white">
                     Fullstack Developer
                   </h3>
-                  <div className="max-h-[200px] overflow-y-auto md:max-h-none">
-                    <ul className="list-disc text-[#b0b0b0] text-sm md:text-[16px]">
+                  <div className="max-h-[190px] overflow-y-auto md:max-h-none">
+                    <ul className="list-disc list-inside text-[#b0b0b0] text-sm md:text-[16px]">
                       <li className="marker:text-primary">
                         Built front-end applications using ReactJS and
                         TypeScript, focusing on mobile-first development
@@ -516,8 +516,8 @@ const Projects = () => {
                   <h3 className="text-xl md:text-2xl font-bold mb-4 text-white">
                     Fullstack Developer
                   </h3>
-                  <div className="max-h-[200px] overflow-y-auto md:max-h-none">
-                    <ul className="list-disc text-[#b0b0b0] text-sm md:text-[16px]">
+                  <div className="max-h-[190px] overflow-y-auto md:max-h-none">
+                    <ul className="list-disc list-inside text-[#b0b0b0] text-sm md:text-[16px]">
                       <li className="marker:text-primary">
                         Built front-end applications using ReactJS and
                         TypeScript, focusing on mobile-first development
@@ -655,8 +655,8 @@ const Projects = () => {
                   <h3 className="text-xl md:text-2xl font-bold mb-4 text-white">
                     Fullstack Developer
                   </h3>
-                  <div className="max-h-[200px] overflow-y-auto md:max-h-none">
-                    <ul className="list-disc text-[#b0b0b0] text-sm md:text-[16px]">
+                  <div className="max-h-[190px] overflow-y-auto md:max-h-none">
+                    <ul className="list-disc list-inside text-[#b0b0b0] text-sm md:text-[16px]">
                       <li className="marker:text-primary">
                         Built front-end applications using ReactJS and
                         TypeScript, focusing on mobile-first development
@@ -794,8 +794,8 @@ const Projects = () => {
                   <h3 className="text-xl md:text-2xl font-bold mb-4 text-white">
                     Fullstack Developer
                   </h3>
-                  <div className="max-h-[200px] overflow-y-auto md:max-h-none">
-                    <ul className="list-disc text-[#b0b0b0] text-sm md:text-[16px]">
+                  <div className="max-h-[190px] overflow-y-auto md:max-h-none">
+                    <ul className="list-disc list-inside text-[#b0b0b0] text-sm md:text-[16px]">
                       <li className="marker:text-primary">
                         Built front-end applications using ReactJS and
                         TypeScript, focusing on mobile-first development
