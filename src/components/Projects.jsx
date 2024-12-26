@@ -96,11 +96,11 @@ const Projects = () => {
                       January 2020 - January 2022
                     </span>
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-white">
+                  <h3 className="text-xl md:text-2xl font-bold mb-4 text-white">
                     Fullstack Developer
                   </h3>
-                  <div className="">
-                    <ul className="list-disc text-[#b0b0b0] text-[16px]">
+                  <div className="max-h-[200px] overflow-y-auto md:max-h-none">
+                    <ul className="list-disc text-[#b0b0b0] text-sm md:text-[16px]">
                       <li className="marker:text-primary">
                         Built front-end applications using ReactJS and
                         TypeScript, focusing on mobile-first development
@@ -120,19 +120,19 @@ const Projects = () => {
                     </ul>
                   </div>
                   <div className="flex flex-wrap gap-2 mt-4">
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       ReactJS
                     </span>
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       PostgreSQL
                     </span>
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       TypeScript
                     </span>
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       Nodejs
                     </span>
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       Firebase
                     </span>
                   </div>
@@ -235,11 +235,11 @@ const Projects = () => {
                       January 2020 - January 2022
                     </span>
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-white">
+                  <h3 className="text-xl md:text-2xl font-bold mb-4 text-white">
                     Fullstack Developer
                   </h3>
-                  <div className="">
-                    <ul className="list-disc text-[#b0b0b0] text-[16px]">
+                  <div className="max-h-[200px] overflow-y-auto md:max-h-none">
+                    <ul className="list-disc text-[#b0b0b0] text-sm md:text-[16px]">
                       <li className="marker:text-primary">
                         Built front-end applications using ReactJS and
                         TypeScript, focusing on mobile-first development
@@ -259,19 +259,19 @@ const Projects = () => {
                     </ul>
                   </div>
                   <div className="flex flex-wrap gap-2 mt-4">
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       ReactJS
                     </span>
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       PostgreSQL
                     </span>
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       TypeScript
                     </span>
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       Nodejs
                     </span>
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       Firebase
                     </span>
                   </div>
@@ -374,11 +374,11 @@ const Projects = () => {
                       January 2020 - January 2022
                     </span>
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-white">
+                  <h3 className="text-xl md:text-2xl font-bold mb-4 text-white">
                     Fullstack Developer
                   </h3>
-                  <div className="">
-                    <ul className="list-disc text-[#b0b0b0] text-[16px]">
+                  <div className="max-h-[200px] overflow-y-auto md:max-h-none">
+                    <ul className="list-disc text-[#b0b0b0] text-sm md:text-[16px]">
                       <li className="marker:text-primary">
                         Built front-end applications using ReactJS and
                         TypeScript, focusing on mobile-first development
@@ -398,19 +398,19 @@ const Projects = () => {
                     </ul>
                   </div>
                   <div className="flex flex-wrap gap-2 mt-4">
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       ReactJS
                     </span>
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       PostgreSQL
                     </span>
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       TypeScript
                     </span>
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       Nodejs
                     </span>
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       Firebase
                     </span>
                   </div>
@@ -513,11 +513,11 @@ const Projects = () => {
                       January 2020 - January 2022
                     </span>
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-white">
+                  <h3 className="text-xl md:text-2xl font-bold mb-4 text-white">
                     Fullstack Developer
                   </h3>
-                  <div className="">
-                    <ul className="list-disc text-[#b0b0b0] text-[16px]">
+                  <div className="max-h-[200px] overflow-y-auto md:max-h-none">
+                    <ul className="list-disc text-[#b0b0b0] text-sm md:text-[16px]">
                       <li className="marker:text-primary">
                         Built front-end applications using ReactJS and
                         TypeScript, focusing on mobile-first development
@@ -537,19 +537,19 @@ const Projects = () => {
                     </ul>
                   </div>
                   <div className="flex flex-wrap gap-2 mt-4">
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       ReactJS
                     </span>
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       PostgreSQL
                     </span>
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       TypeScript
                     </span>
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       Nodejs
                     </span>
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       Firebase
                     </span>
                   </div>
@@ -652,11 +652,11 @@ const Projects = () => {
                       January 2020 - January 2022
                     </span>
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-white">
+                  <h3 className="text-xl md:text-2xl font-bold mb-4 text-white">
                     Fullstack Developer
                   </h3>
-                  <div className="">
-                    <ul className="list-disc text-[#b0b0b0] text-[16px]">
+                  <div className="max-h-[200px] overflow-y-auto md:max-h-none">
+                    <ul className="list-disc text-[#b0b0b0] text-sm md:text-[16px]">
                       <li className="marker:text-primary">
                         Built front-end applications using ReactJS and
                         TypeScript, focusing on mobile-first development
@@ -676,19 +676,19 @@ const Projects = () => {
                     </ul>
                   </div>
                   <div className="flex flex-wrap gap-2 mt-4">
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       ReactJS
                     </span>
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       PostgreSQL
                     </span>
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       TypeScript
                     </span>
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       Nodejs
                     </span>
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       Firebase
                     </span>
                   </div>
@@ -791,11 +791,11 @@ const Projects = () => {
                       January 2020 - January 2022
                     </span>
                   </div>
-                  <h3 className="text-2xl font-bold mb-4 text-white">
+                  <h3 className="text-xl md:text-2xl font-bold mb-4 text-white">
                     Fullstack Developer
                   </h3>
-                  <div className="">
-                    <ul className="list-disc text-[#b0b0b0] text-[16px]">
+                  <div className="max-h-[200px] overflow-y-auto md:max-h-none">
+                    <ul className="list-disc text-[#b0b0b0] text-sm md:text-[16px]">
                       <li className="marker:text-primary">
                         Built front-end applications using ReactJS and
                         TypeScript, focusing on mobile-first development
@@ -815,19 +815,19 @@ const Projects = () => {
                     </ul>
                   </div>
                   <div className="flex flex-wrap gap-2 mt-4">
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       ReactJS
                     </span>
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       PostgreSQL
                     </span>
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       TypeScript
                     </span>
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       Nodejs
                     </span>
-                    <span className="px-2 py-1 rounded-3xl text-primary bg-[#4caf5015]">
+                    <span className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
                       Firebase
                     </span>
                   </div>
