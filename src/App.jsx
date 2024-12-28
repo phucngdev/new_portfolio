@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import "./App.css";
 import Hello from "./components/Hello";
 import Infomation from "./components/Infomation";
 import Skill from "./components/Skill";
@@ -8,6 +9,7 @@ import Education from "./components/Education";
 import Certifications from "./components/Certifications";
 import Touch from "./components/Touch";
 import Projects from "./components/Projects";
+import { message } from "antd";
 
 const App = () => {
   const [showHello, setShowHello] = useState(true);
@@ -72,7 +74,6 @@ const App = () => {
           </div>
         </div>
 
-        {/* Main Content */}
         <div className="relative z-10">
           <Infomation />
           <Skill />

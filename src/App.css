@@ -1,0 +1,11 @@
+.ant-modal-content {
+  background-color: #1e1e1e !important;
+}
+.ant-modal-title {
+  background-color: #1e1e1e !important;
+  color: #4caf50 !important;
+}
+
+.ant-modal-close-icon {
+  color: #4caf50 !important;
+}
