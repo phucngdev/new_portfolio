@@ -10,6 +10,7 @@ import Certifications from "./components/Certifications";
 import Touch from "./components/Touch";
 import Projects from "./components/Projects";
 import { message } from "antd";
+import Favorite from "./components/Favorite";
 
 const App = () => {
   const [showHello, setShowHello] = useState(true);
@@ -82,6 +83,7 @@ const App = () => {
           <Education />
           <Projects />
           <Certifications />
+          <Favorite />
           <Touch />
         </div>
       </div>

@@ -148,7 +148,8 @@ const Projects = () => {
         open={open}
         onOk={() => setOpen(false)}
         onCancel={() => setOpen(false)}
-        width={isMobile ? 390 : 1000}
+        width={isMobile ? "100%" : 1000}
+        style={isMobile ? { margin: "0 8px" } : {}}
         footer={null}
       >
         <div className="">
