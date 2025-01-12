@@ -9,11 +9,8 @@ const Favorite = () => {
         </h2>
         <div className="w-full">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-8">
-            <div className="p-2 md:p-5 rounded-xl text-white h-[100px] md:h-[170px] cursor-pointer hover:scale-105 transition duration-300 bg-[#1e1e1e]">
-              <div className="text-primary text-base md:text-lg font-semibold mb-2">
-                2022
-              </div>
-              <h3 className="flex items-start gap-5 mb-5 font-bold  text-base md:text-xl">
+            <div className="p-2 md:p-5 rounded-xl text-white h-[100px] md:h-[170px] cursor-pointer flex flex-col justify-between hover:scale-105 transition duration-300 bg-[#1e1e1e]">
+              <h3 className="flex items-start gap-5 font-bold  text-base md:text-xl">
                 <div className="text-primary text-3xl">
                   <svg
                     stroke="currentColor"
@@ -45,33 +42,43 @@ const Favorite = () => {
                 </div>
                 <div className="">
                   <p>Music</p>
-                  <div className="flex items-center gap-3 flex-wrap text-[12px] mt-1">
-                    <p className="px-3 rounded-full bg-white bg-opacity-10">
+                  <div className="flex items-center gap-3 flex-wrap text-[10px] md:text-[12px] mt-1">
+                    <p className="px-3  rounded-full bg-white bg-opacity-10">
                       POP
                     </p>
-                    <p className="px-3 rounded-full bg-white bg-opacity-10">
+                    <p className="px-3  rounded-full bg-white bg-opacity-10">
                       BALLAD
                     </p>
-                    <p className="px-3 rounded-full bg-white bg-opacity-10">
+                    <p className="px-3  rounded-full bg-white bg-opacity-10">
                       RAP
                     </p>
                   </div>
                 </div>
               </h3>
-            </div>
-            <div className="p-2 md:p-5 rounded-xl text-white h-[100px] md:h-[170px] cursor-pointer hover:scale-105 transition duration-300 bg-[#1e1e1e]">
-              <div className="text-primary text-base md:text-lg font-semibold mb-2">
-                2022
+              <div className="text-primary text-[11px] md:text-sm font-semibold flex items-center gap-1">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  strokeWidth={0}
+                  height="1.5em"
+                  width="1.5em"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20.5,4.609A5.811,5.811,0,0,0,16,2.5a5.75,5.75,0,0,0-4,1.455A5.75,5.75,0,0,0,8,2.5,5.811,5.811,0,0,0,3.5,4.609c-.953,1.156-1.95,3.249-1.289,6.66,1.055,5.447,8.966,9.917,9.3,10.1a1,1,0,0,0,.974,0c.336-.187,8.247-4.657,9.3-10.1C22.45,7.858,21.453,5.765,20.5,4.609Zm-.674,6.28C19.08,14.74,13.658,18.322,12,19.34c-2.336-1.41-7.142-4.95-7.821-8.451-.513-2.646.189-4.183.869-5.007A3.819,3.819,0,0,1,8,4.5a3.493,3.493,0,0,1,3.115,1.469,1.005,1.005,0,0,0,1.76.011A3.489,3.489,0,0,1,16,4.5a3.819,3.819,0,0,1,2.959,1.382C19.637,6.706,20.339,8.243,19.826,10.889Z" />
+                </svg>
+                四月は君の嘘
               </div>
-              <h3 className="flex items-start gap-5 mb-5 font-bold  text-base md:text-xl">
+            </div>
+            <div className="p-2 md:p-5 rounded-xl text-white h-[100px] md:h-[170px] cursor-pointer flex flex-col justify-between hover:scale-105 transition duration-300 bg-[#1e1e1e]">
+              <h3 className="flex items-start gap-5 font-bold  text-base md:text-xl">
                 <div className="text-primary text-3xl">
                   <svg
                     stroke="currentColor"
                     fill="currentColor"
                     strokeWidth={0}
-                    viewBox="0 0 96 96"
                     height="1em"
                     width="1em"
+                    viewBox="0 0 96 96"
                     xmlns="http://www.w3.org/2000/svg"
                   >
                     <path
@@ -82,28 +89,35 @@ const Favorite = () => {
                 </div>
                 <div className="">
                   <p>Anime</p>
-                  <div className="flex items-center gap-3 flex-wrap text-[12px] mt-1">
-                    <p className="px-3 rounded-full bg-white bg-opacity-10">
+                  <div className="flex items-center gap-3 flex-wrap text-[10px] md:text-[12px] mt-1">
+                    <p className="px-3  rounded-full bg-white bg-opacity-10">
                       FANTASY
                     </p>
-                    <p className="px-3 rounded-full bg-white bg-opacity-10">
-                      HAREM
-                    </p>
-                    <p className="px-3 rounded-full bg-white bg-opacity-10">
+                    <p className="px-3  rounded-full bg-white bg-opacity-10">
                       ISEKAI
                     </p>
-                    <p className="px-3 rounded-full bg-white bg-opacity-10">
+                    <p className="px-3  rounded-full bg-white bg-opacity-10">
                       ROMCOM
                     </p>
                   </div>
                 </div>
               </h3>
-            </div>
-            <div className="p-2 md:p-5 rounded-xl text-white h-[100px] md:h-[170px] cursor-pointer hover:scale-105 transition duration-300 bg-[#1e1e1e] relative">
-              <div className="text-primary text-base md:text-lg font-semibold mb-2">
-                2025
+              <div className="text-primary text-[11px] md:text-sm font-semibold flex items-center gap-1">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  strokeWidth={0}
+                  height="1.5em"
+                  width="1.5em"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20.5,4.609A5.811,5.811,0,0,0,16,2.5a5.75,5.75,0,0,0-4,1.455A5.75,5.75,0,0,0,8,2.5,5.811,5.811,0,0,0,3.5,4.609c-.953,1.156-1.95,3.249-1.289,6.66,1.055,5.447,8.966,9.917,9.3,10.1a1,1,0,0,0,.974,0c.336-.187,8.247-4.657,9.3-10.1C22.45,7.858,21.453,5.765,20.5,4.609Zm-.674,6.28C19.08,14.74,13.658,18.322,12,19.34c-2.336-1.41-7.142-4.95-7.821-8.451-.513-2.646.189-4.183.869-5.007A3.819,3.819,0,0,1,8,4.5a3.493,3.493,0,0,1,3.115,1.469,1.005,1.005,0,0,0,1.76.011A3.489,3.489,0,0,1,16,4.5a3.819,3.819,0,0,1,2.959,1.382C19.637,6.706,20.339,8.243,19.826,10.889Z" />
+                </svg>
+                Kage no Jitsuryokusha ni Naritakute!
               </div>
-              <h3 className="flex items-start gap-5 mb-5 font-bold  text-base md:text-xl">
+            </div>
+            <div className="p-2 md:p-5 rounded-xl text-white h-[100px] md:h-[170px] cursor-pointer flex flex-col justify-between hover:scale-105 transition duration-300 bg-[#1e1e1e] relative">
+              <h3 className="flex items-start gap-5 font-bold  text-base md:text-xl">
                 <div className="text-primary text-3xl">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -125,16 +139,29 @@ const Favorite = () => {
                 </div>
                 <div className="">
                   <p>Comic</p>
-                  <div className="flex items-center gap-3 flex-wrap text-[12px] mt-1">
-                    <p className="px-3 rounded-full bg-white bg-opacity-10">
+                  <div className="flex items-center gap-3 flex-wrap text-[10px] md:text-[12px] mt-1">
+                    <p className="px-3  rounded-full bg-white bg-opacity-10">
                       MANGA
                     </p>
-                    <p className="px-3 rounded-full bg-white bg-opacity-10">
+                    <p className="px-3  rounded-full bg-white bg-opacity-10">
                       LIGHT NOVEL
                     </p>
                   </div>
                 </div>
               </h3>
+              <div className="text-primary text-[11px] md:text-sm font-semibold flex items-center gap-1">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  strokeWidth={0}
+                  height="1.5em"
+                  width="1.5em"
+                  viewBox="0 0 24 24"
+                >
+                  <path d="M20.5,4.609A5.811,5.811,0,0,0,16,2.5a5.75,5.75,0,0,0-4,1.455A5.75,5.75,0,0,0,8,2.5,5.811,5.811,0,0,0,3.5,4.609c-.953,1.156-1.95,3.249-1.289,6.66,1.055,5.447,8.966,9.917,9.3,10.1a1,1,0,0,0,.974,0c.336-.187,8.247-4.657,9.3-10.1C22.45,7.858,21.453,5.765,20.5,4.609Zm-.674,6.28C19.08,14.74,13.658,18.322,12,19.34c-2.336-1.41-7.142-4.95-7.821-8.451-.513-2.646.189-4.183.869-5.007A3.819,3.819,0,0,1,8,4.5a3.493,3.493,0,0,1,3.115,1.469,1.005,1.005,0,0,0,1.76.011A3.489,3.489,0,0,1,16,4.5a3.819,3.819,0,0,1,2.959,1.382C19.637,6.706,20.339,8.243,19.826,10.889Z" />
+                </svg>
+                Tokidoki Bosotto Russia-go de Dereru Tonari no Alya-san
+              </div>
             </div>
           </div>
         </div>
