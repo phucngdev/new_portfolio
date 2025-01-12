@@ -28,9 +28,9 @@ const Tools = () => {
                 <h4 className="text-[13px] md:text-[19px] mb-2 font-semibold">
                   Git
                 </h4>
-                <div className="text-[14px] mb-1">5 years</div>
+                <div className="text-[14px] mb-1">2 years</div>
                 <div className="text-[14px] mt-1 text-primary font-semibold">
-                  Expert
+                  Intermediate
                 </div>
               </div>
             </div>
@@ -53,9 +53,9 @@ const Tools = () => {
                 <h4 className="text-[13px] md:text-[19px] mb-2 font-semibold">
                   Docker
                 </h4>
-                <div className="text-[14px] mb-1">3 years</div>
+                <div className="text-[14px] mb-1">0 months</div>
                 <div className="text-[14px] mt-1 text-primary font-semibold">
-                  Advanced
+                  In Plan :))
                 </div>
               </div>
             </div>
@@ -78,9 +78,9 @@ const Tools = () => {
                 <h4 className="text-[13px] md:text-[19px] mb-2 font-semibold">
                   GitLab
                 </h4>
-                <div className="text-[14px] mb-1">3 years</div>
+                <div className="text-[14px] mb-1">2 months</div>
                 <div className="text-[14px] mt-1 text-primary font-semibold">
-                  Advanced
+                  Beginner
                 </div>
               </div>
             </div>
@@ -96,12 +96,38 @@ const Tools = () => {
                   width="1em"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path d="M22.406 10.9a7.088 7.088 0 00-3.377-2.358v-.085c0-4.035-3.156-7.324-7.047-7.324-3.893 0-7.05 3.282-7.05 7.325v.1C2.081 9.492 0 12.268 0 15.542c0 4.035 3.159 7.325 7.05 7.325a6.907 6.907 0 004.952-2.108 6.885 6.885 0 004.947 2.108c3.884 0 7.051-3.282 7.051-7.325a7.572 7.572 0 00-1.594-4.643zM16.95 21.014c-2.903 0-5.267-2.456-5.267-5.474a.91.91 0 00-.89-.924.906.906 0 00-.892.925c0 1.368.367 2.651.994 3.748a5.156 5.156 0 01-3.845 1.733c-2.904 0-5.27-2.457-5.27-5.474 0-3.016 2.366-5.473 5.27-5.473.63 0 1.241.117 1.827.335.007 0 .013.007.02.007.203.071.489.21.578.287a.858.858 0 001.249-.1.942.942 0 00-.097-1.3c-.39-.342-.995-.575-1.144-.63a6.814 6.814 0 00-2.425-.443c-.113 0-.225 0-.338.007.12-2.916 2.433-5.247 5.27-5.247 2.903 0 5.267 2.456 5.267 5.474a5.569 5.569 0 01-2.215 4.463.948.948 0 00-.21 1.283c.171.25.45.39.727.39a.86.86 0 00.516-.172 7.381 7.381 0 002.709-4.02c2.035.785 3.449 2.829 3.449 5.139-.007 3.01-2.371 5.466-5.283 5.466z" />
+                  <title>github [#142]</title>
+                  <desc>Created with Sketch.</desc>
+                  <defs></defs>
+                  <g
+                    id="Page-1"
+                    stroke="none"
+                    stroke-width="1"
+                    fill="none"
+                    fill-rule="evenodd"
+                  >
+                    <g
+                      id="Dribbble-Light-Preview"
+                      transform="translate(-140.000000, -7559.000000)"
+                      fill="#000000"
+                    >
+                      <g
+                        id="icons"
+                        transform="translate(56.000000, 160.000000)"
+                      >
+                        <path
+                          stroke="#4caf50"
+                          d="M94,7399 C99.523,7399 104,7403.59 104,7409.253 C104,7413.782 101.138,7417.624 97.167,7418.981 C96.66,7419.082 96.48,7418.762 96.48,7418.489 C96.48,7418.151 96.492,7417.047 96.492,7415.675 C96.492,7414.719 96.172,7414.095 95.813,7413.777 C98.04,7413.523 100.38,7412.656 100.38,7408.718 C100.38,7407.598 99.992,7406.684 99.35,7405.966 C99.454,7405.707 99.797,7404.664 99.252,7403.252 C99.252,7403.252 98.414,7402.977 96.505,7404.303 C95.706,7404.076 94.85,7403.962 94,7403.958 C93.15,7403.962 92.295,7404.076 91.497,7404.303 C89.586,7402.977 88.746,7403.252 88.746,7403.252 C88.203,7404.664 88.546,7405.707 88.649,7405.966 C88.01,7406.684 87.619,7407.598 87.619,7408.718 C87.619,7412.646 89.954,7413.526 92.175,7413.785 C91.889,7414.041 91.63,7414.493 91.54,7415.156 C90.97,7415.418 89.522,7415.871 88.63,7414.304 C88.63,7414.304 88.101,7413.319 87.097,7413.247 C87.097,7413.247 86.122,7413.234 87.029,7413.87 C87.029,7413.87 87.684,7414.185 88.139,7415.37 C88.139,7415.37 88.726,7417.2 91.508,7416.58 C91.513,7417.437 91.522,7418.245 91.522,7418.489 C91.522,7418.76 91.338,7419.077 90.839,7418.982 C86.865,7417.627 84,7413.783 84,7409.253 C84,7403.59 88.478,7399 94,7399"
+                          id="github-[#142]"
+                        ></path>
+                      </g>
+                    </g>
+                  </g>
                 </svg>
               </div>
               <div className="flex flex-col justify-between">
                 <h4 className="text-[13px] md:text-[19px] mb-2 font-semibold">
-                  SonarCloud
+                  Github
                 </h4>
                 <div className="text-[14px] mb-1">2 years</div>
                 <div className="text-[14px] mt-1 text-primary font-semibold">
@@ -128,9 +154,9 @@ const Tools = () => {
                 <h4 className="text-[13px] md:text-[19px] mb-2 font-semibold">
                   CI/CD Pipeline
                 </h4>
-                <div className="text-[14px] mb-1">3 years</div>
+                <div className="text-[14px] mb-1">0 months</div>
                 <div className="text-[14px] mt-1 text-primary font-semibold">
-                  Intermediate
+                  In Plan :))
                 </div>
               </div>
             </div>
