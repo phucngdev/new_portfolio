@@ -53,7 +53,7 @@ const Tools = () => {
                 <h4 className="text-[13px] md:text-[19px] mb-2 font-semibold">
                   Docker
                 </h4>
-                <div className="text-[14px] mb-1">0 months</div>
+                <div className="text-[14px] mb-1">null</div>
                 <div className="text-[14px] mt-1 text-primary font-semibold">
                   In Plan :))
                 </div>
@@ -154,7 +154,7 @@ const Tools = () => {
                 <h4 className="text-[13px] md:text-[19px] mb-2 font-semibold">
                   CI/CD Pipeline
                 </h4>
-                <div className="text-[14px] mb-1">0 months</div>
+                <div className="text-[14px] mb-1">null</div>
                 <div className="text-[14px] mt-1 text-primary font-semibold">
                   In Plan :))
                 </div>
