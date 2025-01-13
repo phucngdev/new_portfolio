@@ -166,7 +166,7 @@ const Skill = () => {
                   <h4 className="text-[13px] md:text-[19px] mb-2 font-semibold">
                     TypeScript
                   </h4>
-                  <div className="text-[14px] mb-1">6 years</div>
+                  <div className="text-[14px] mb-1">6 months</div>
                   <div className="text-[14px] mt-1 text-primary font-semibold">
                     Intermediate
                   </div>
