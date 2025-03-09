@@ -66,7 +66,7 @@ const Favorite = () => {
                 >
                   <path d="M20.5,4.609A5.811,5.811,0,0,0,16,2.5a5.75,5.75,0,0,0-4,1.455A5.75,5.75,0,0,0,8,2.5,5.811,5.811,0,0,0,3.5,4.609c-.953,1.156-1.95,3.249-1.289,6.66,1.055,5.447,8.966,9.917,9.3,10.1a1,1,0,0,0,.974,0c.336-.187,8.247-4.657,9.3-10.1C22.45,7.858,21.453,5.765,20.5,4.609Zm-.674,6.28C19.08,14.74,13.658,18.322,12,19.34c-2.336-1.41-7.142-4.95-7.821-8.451-.513-2.646.189-4.183.869-5.007A3.819,3.819,0,0,1,8,4.5a3.493,3.493,0,0,1,3.115,1.469,1.005,1.005,0,0,0,1.76.011A3.489,3.489,0,0,1,16,4.5a3.819,3.819,0,0,1,2.959,1.382C19.637,6.706,20.339,8.243,19.826,10.889Z" />
                 </svg>
-                四月は君の嘘
+                Ăn cà dốt
               </div>
             </div>
             <div className="p-2 md:p-5 rounded-xl text-white h-[100px] md:h-[170px] cursor-pointer flex flex-col justify-between hover:scale-105 transition duration-300 bg-[#1e1e1e]">
@@ -165,7 +165,7 @@ const Favorite = () => {
             </div>
           </div>
         </div>
-        <div className="relative flex items-center justify-center mt-5 md:mt-8">
+        {/* <div className="relative flex items-center justify-center mt-5 md:mt-8">
           <div className="w-52 h-10 rounded-xl animate-pacse bg-primary"></div>
           <a
             href="https://khosach.vercel.app/"
@@ -175,7 +175,7 @@ const Favorite = () => {
           >
             See my book collection
           </a>
-        </div>
+        </div> */}
       </section>
     </>
   );
