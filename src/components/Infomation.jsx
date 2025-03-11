@@ -46,19 +46,19 @@ const Infomation = () => {
             Code like an{" "}
             <span className="animate-gradient bg-[linear-gradient(to_right,#0081a7,#38BDF8,#A7F3D0,#38BDF8,#A7F3D0,#6EE7B7)]  bg-[length:200%_auto] bg-clip-text tracking-tighter text-transparent">
               artist
-            </span>{" "}
+            </span>
             , optimize like an{" "}
             <span className="animate-gradient bg-[linear-gradient(to_right,#0081a7,#38BDF8,#A7F3D0,#38BDF8,#A7F3D0,#6EE7B7)]  bg-[length:200%_auto] bg-clip-text tracking-tighter text-transparent">
               engineer
-            </span>{" "}
+            </span>
             , and debug like a{" "}
             <span className="animate-gradient bg-[linear-gradient(to_right,#0081a7,#38BDF8,#A7F3D0,#38BDF8,#A7F3D0,#6EE7B7)]  bg-[length:200%_auto] bg-clip-text tracking-tighter text-transparent">
               detective
-            </span>{" "}
+            </span>
             . No{" "}
             <span className="animate-gradient bg-[linear-gradient(to_right,#0081a7,#38BDF8,#A7F3D0,#38BDF8,#A7F3D0,#6EE7B7)]  bg-[length:200%_auto] bg-clip-text tracking-tighter text-transparent">
               limits
-            </span>{" "}
+            </span>
             , only{" "}
             <span className="animate-gradient bg-[linear-gradient(to_right,#0081a7,#38BDF8,#A7F3D0,#38BDF8,#A7F3D0,#6EE7B7)]  bg-[length:200%_auto] bg-clip-text tracking-tighter text-transparent">
               solutions!
