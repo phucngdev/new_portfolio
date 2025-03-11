@@ -13,7 +13,7 @@ const useAnimatedText = (sentence) => {
     exit: { opacity: 0, y: -10, transition: { duration: 0.3 } },
   };
 
-  const [key, setKey] = useState(0);
+  const [key, setKey] = useState((Math.random() * 9 + 1).toFixed(1));
 
   useEffect(() => {
     const interval = setInterval(() => {
