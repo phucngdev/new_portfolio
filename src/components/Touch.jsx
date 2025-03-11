@@ -72,39 +72,43 @@ const Touch = () => {
           </p>
           <form
             onSubmit={handleSubmit}
-            className="flex flex-col gap-3 mt-6 md:w-[50%]"
+            className="flex flex-col gap-3 mt-6 w-full md:w-[50%]"
           >
-            <input
+            <Input
               type="text"
               name="name"
               placeholder="Your Name"
               value={formData.name}
               onChange={handleChange}
-              className="bg-[#1e1e1e] placeholder:text-[#b0b0b0] text-white p-2 rounded-md"
+              className="bg-[#1e1e1e] placeholder:text-[#b0b0b0] hover:bg-[#1e1e1e] active:bg-[#1e1e1e] text-white focus-within:bg-[#1e1e1e] hover:border-primary focus:border-primary"
             />
-            <input
+            <Input
               type="email"
               name="email"
               placeholder="Your Email"
               value={formData.email}
               onChange={handleChange}
-              className="bg-[#1e1e1e] placeholder:text-[#b0b0b0] text-white p-2 rounded-md"
+              className="bg-[#1e1e1e] placeholder:text-[#b0b0b0] hover:bg-[#1e1e1e] active:bg-[#1e1e1e] text-white focus-within:bg-[#1e1e1e] hover:border-primary focus:border-primary"
             />
-            <input
+            <Input
               type="text"
               name="subject"
               placeholder="Subject"
               value={formData.subject}
               onChange={handleChange}
-              className="bg-[#1e1e1e] placeholder:text-[#b0b0b0] text-white p-2 rounded-md"
+              className="bg-[#1e1e1e] placeholder:text-[#b0b0b0] hover:bg-[#1e1e1e] active:bg-[#1e1e1e] text-white focus-within:bg-[#1e1e1e] hover:border-primary focus:border-primary"
             />
-            <textarea
+            <TextArea
               name="message"
+              autoSize={{
+                minRows: 3,
+                maxRows: 6,
+              }}
               placeholder="Your Message"
               value={formData.message}
               onChange={handleChange}
               rows="4"
-              className="bg-[#1e1e1e] placeholder:text-[#b0b0b0] text-white p-2 rounded-md"
+              className="bg-[#1e1e1e] placeholder:text-[#b0b0b0] hover:bg-[#1e1e1e] active:bg-[#1e1e1e] text-white focus-within:bg-[#1e1e1e] hover:border-primary focus:border-primary"
             />
             <button
               type="submit"
