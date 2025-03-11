@@ -80,7 +80,7 @@ const Touch = () => {
               placeholder="Your Name"
               value={formData.name}
               onChange={handleChange}
-              className="bg-[#1e1e1e] placeholder:text-[#b0b0b0] hover:bg-[#1e1e1e] active:bg-[#1e1e1e] text-white focus-within:bg-[#1e1e1e] hover:border-primary focus:border-primary"
+              className="bg-[#1e1e1e] placeholder:text-[#b0b0b0] hover:bg-[#1e1e1e] border-[#767676] active:bg-[#1e1e1e] text-white focus-within:bg-[#1e1e1e] hover:border-primary focus:border-primary"
             />
             <Input
               type="email"
@@ -88,7 +88,7 @@ const Touch = () => {
               placeholder="Your Email"
               value={formData.email}
               onChange={handleChange}
-              className="bg-[#1e1e1e] placeholder:text-[#b0b0b0] hover:bg-[#1e1e1e] active:bg-[#1e1e1e] text-white focus-within:bg-[#1e1e1e] hover:border-primary focus:border-primary"
+              className="bg-[#1e1e1e] placeholder:text-[#b0b0b0] hover:bg-[#1e1e1e] border-[#767676] active:bg-[#1e1e1e] text-white focus-within:bg-[#1e1e1e] hover:border-primary focus:border-primary"
             />
             <Input
               type="text"
@@ -96,7 +96,7 @@ const Touch = () => {
               placeholder="Subject"
               value={formData.subject}
               onChange={handleChange}
-              className="bg-[#1e1e1e] placeholder:text-[#b0b0b0] hover:bg-[#1e1e1e] active:bg-[#1e1e1e] text-white focus-within:bg-[#1e1e1e] hover:border-primary focus:border-primary"
+              className="bg-[#1e1e1e] placeholder:text-[#b0b0b0] hover:bg-[#1e1e1e] border-[#767676] active:bg-[#1e1e1e] text-white focus-within:bg-[#1e1e1e] hover:border-primary focus:border-primary"
             />
             <TextArea
               name="message"
@@ -108,7 +108,7 @@ const Touch = () => {
               value={formData.message}
               onChange={handleChange}
               rows="4"
-              className="bg-[#1e1e1e] placeholder:text-[#b0b0b0] hover:bg-[#1e1e1e] active:bg-[#1e1e1e] text-white focus-within:bg-[#1e1e1e] hover:border-primary focus:border-primary"
+              className="bg-[#1e1e1e] placeholder:text-[#b0b0b0] hover:bg-[#1e1e1e] border-[#767676] active:bg-[#1e1e1e] text-white focus-within:bg-[#1e1e1e] hover:border-primary focus:border-primary"
             />
             <button
               type="submit"
