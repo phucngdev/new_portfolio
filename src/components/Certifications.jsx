@@ -1,17 +1,47 @@
 import React from "react";
+import useAnimatedText from "../hooks/useAnimatedText";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Certifications = () => {
+  const { key, characters, letterAnimation } =
+    useAnimatedText("Certifications");
   return (
     <>
       <section className="container mx-auto px-2 md:px-10 h-screen flex flex-col items-center justify-center snap-start">
-        <h2 className="text-center text-primary mb-8 text-3xl md:text-[40px] font-jetbrains font-bold">
-          Certifications &amp; Awards
-        </h2>
+        <AnimatePresence mode="wait">
+          <motion.h2
+            key={key}
+            className="text-center text-primary mb-8 text-3xl md:text-[40px] font-jetbrains font-bold"
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            variants={{
+              visible: { transition: { staggerChildren: 0.1 } },
+              exit: {
+                transition: {
+                  staggerChildren: 0.1,
+                  staggerDirection: -1,
+                  delay: 2,
+                },
+              }, // Chờ 2s rồi biến mất từ cuối về đầu
+            }}
+          >
+            {characters.map(({ char, key }) => (
+              <motion.span
+                key={key}
+                variants={letterAnimation}
+                style={{ display: "inline-block" }}
+              >
+                {char}
+              </motion.span>
+            ))}
+          </motion.h2>
+        </AnimatePresence>
         <div className="w-full">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-8">
             <div className="p-2 md:p-5 rounded-xl text-white h-[100px] md:h-[170px] cursor-pointer hover:scale-105 transition duration-300 bg-[#1e1e1e]">
               <div className="text-primary text-base md:text-lg font-semibold mb-2">
-                2022
+                2024
               </div>
               <h3 className="flex items-center gap-5 mb-5 font-bold  text-base md:text-xl">
                 <div className="text-primary text-3xl">
@@ -32,7 +62,7 @@ const Certifications = () => {
             </div>
             <div className="p-2 md:p-5 rounded-xl text-white h-[100px] md:h-[170px] cursor-pointer hover:scale-105 transition duration-300 bg-[#1e1e1e]">
               <div className="text-primary text-base md:text-lg font-semibold mb-2">
-                2022
+                2024
               </div>
               <h3 className="flex items-center gap-5 mb-5 font-bold  text-base md:text-xl">
                 <div className="text-primary text-3xl">
@@ -100,12 +130,6 @@ const Certifications = () => {
               </h3>
             </div>
           </div>
-        </div>
-        <div className="relative flex items-center justify-center mt-5 md:mt-8">
-          <div className="w-36 h-10 rounded-xl animate-pacse bg-primary"></div>
-          <button className="absolute top-1/2 left-1/2 translate-x-[-50%] translate-y-[-50%] h-10 w-36 rounded-xl text-white bg-primary cursor-pointer">
-            See more
-          </button>
         </div>
       </section>
     </>

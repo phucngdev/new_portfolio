@@ -1,12 +1,45 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import useAnimatedText from "../hooks/useAnimatedText";
 
 const Skill = () => {
+  const { key, characters, letterAnimation } =
+    useAnimatedText("Skills & Expertise");
   return (
     <>
       <section className="container mx-auto px-2 md:px-10 h-screen flex flex-col items-center justify-center snap-start">
-        <h2 className="text-center text-primary mb-8 text-3xl md:text-[40px] font-jetbrains font-bold">
-          Skills &amp; Expertise
-        </h2>
+        <AnimatePresence mode="wait">
+          <motion.h2
+            key={key} // Reset component mỗi 4 giây để lặp animation
+            className="text-center text-primary mb-8 text-3xl md:text-[40px] font-jetbrains font-bold"
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            variants={{
+              visible: { transition: { staggerChildren: 0.1 } },
+              exit: {
+                transition: {
+                  staggerChildren: 0.1,
+                  staggerDirection: -1,
+                  delay: 2,
+                },
+              }, // Chờ 2s rồi biến mất từ cuối về đầu
+            }}
+          >
+            {characters.map(({ char, key }) => (
+              <motion.span
+                key={key}
+                variants={letterAnimation}
+                style={{
+                  display: "inline-block",
+                  minWidth: char === " " ? "0.3em" : "auto",
+                }}
+              >
+                {char === " " ? "\u00A0" : char}
+              </motion.span>
+            ))}
+          </motion.h2>
+        </AnimatePresence>
         <div className="w-full">
           <div>
             <h3 className="relative text-[28px] text-white font-bold mb-8 ps-[18px] before:content-[''] before:absolute before:left-0 before:top-0 before:h-full before:w-[5px] before:bg-primary">
@@ -65,7 +98,7 @@ const Skill = () => {
                   <h4 className="text-[13px] md:text-[19px] mb-2 font-semibold">
                     React.js
                   </h4>
-                  <div className="text-[14px] mb-1">1 years</div>
+                  <div className="text-[14px] mb-1">2 years</div>
                   <div className="text-[14px] mt-1 text-primary font-semibold">
                     Advanced
                   </div>

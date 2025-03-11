@@ -1,13 +1,49 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import useAnimatedText from "../hooks/useAnimatedText";
 
 const Tools = () => {
+  const { key, characters, letterAnimation } =
+    useAnimatedText("Tools & DevOps");
   return (
     <>
       <section className="container mx-auto px-2 md:px-10 h-screen flex items-center justify-center snap-start">
         <div className="w-full">
-          <h3 className="relative text-[28px] text-white font-bold mb-8 ps-[18px] before:content-[''] before:absolute before:left-0 before:top-0 before:h-full before:w-[5px] before:bg-primary">
+          {/* <h3 className="relative text-[28px] text-white font-bold mb-8 ps-[18px] before:content-[''] before:absolute before:left-0 before:top-0 before:h-full before:w-[5px] before:bg-primary">
             Tools &amp; DevOps
-          </h3>
+          </h3> */}
+          <AnimatePresence mode="wait">
+            <motion.h3
+              key={key} // Reset component mỗi 4 giây để lặp animation
+              className="relative text-[28px] text-white font-bold mb-8 ps-[18px] before:content-[''] before:absolute before:left-0 before:top-0 before:h-full before:w-[5px] before:bg-primary"
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              variants={{
+                visible: { transition: { staggerChildren: 0.1 } },
+                exit: {
+                  transition: {
+                    staggerChildren: 0.1,
+                    staggerDirection: -1,
+                    delay: 2,
+                  },
+                }, // Chờ 2s rồi biến mất từ cuối về đầu
+              }}
+            >
+              {characters.map(({ char, key }) => (
+                <motion.span
+                  key={key}
+                  variants={letterAnimation}
+                  style={{
+                    display: "inline-block",
+                    minWidth: char === " " ? "0.3em" : "auto",
+                  }}
+                >
+                  {char === " " ? "\u00A0" : char}
+                </motion.span>
+              ))}
+            </motion.h3>
+          </AnimatePresence>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-8">
             <div className="flex items-center gap-5 p-3 md:p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
               <div className="text-2xl md:text-5xl text-primary">
@@ -78,7 +114,7 @@ const Tools = () => {
                 <h4 className="text-[13px] md:text-[19px] mb-2 font-semibold">
                   GitLab
                 </h4>
-                <div className="text-[14px] mb-1">2 months</div>
+                <div className="text-[14px] mb-1">1 months</div>
                 <div className="text-[14px] mt-1 text-primary font-semibold">
                   Beginner
                 </div>
@@ -157,6 +193,36 @@ const Tools = () => {
                 <div className="text-[14px] mb-1">null</div>
                 <div className="text-[14px] mt-1 text-primary font-semibold">
                   In Plan :))
+                </div>
+              </div>
+            </div>
+            <div className="flex items-center gap-5 p-3 md:p-5 text-white bg-[#1e1e1e] rounded-xl cursor-pointer hover:scale-105 transition duration-500">
+              <div className="text-2xl md:text-5xl text-primary">
+                <svg
+                  stroke="currentColor"
+                  fill="currentColor"
+                  strokeWidth={0}
+                  role="img"
+                  viewBox="0 0 24 24"
+                  height="1em"
+                  width="1em"
+                >
+                  <g data-name="Layer 2">
+                    <g data-name="npm">
+                      <rect width="24" height="24" opacity="0" />
+
+                      <path d="M18 3H6a3 3 0 0 0-3 3v12a3 3 0 0 0 3 3h7V11h4v10h1a3 3 0 0 0 3-3V6a3 3 0 0 0-3-3z" />
+                    </g>
+                  </g>
+                </svg>
+              </div>
+              <div className="flex flex-col justify-between">
+                <h4 className="text-[13px] md:text-[19px] mb-2 font-semibold">
+                  NPM
+                </h4>
+                <div className="text-[14px] mb-1">2 years</div>
+                <div className="text-[14px] mt-1 text-primary font-semibold">
+                  Intermediate
                 </div>
               </div>
             </div>

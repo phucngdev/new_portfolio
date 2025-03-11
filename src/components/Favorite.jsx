@@ -1,12 +1,41 @@
 import React from "react";
+import useAnimatedText from "../hooks/useAnimatedText";
+import { AnimatePresence, motion } from "framer-motion";
 
 const Favorite = () => {
+  const { key, characters, letterAnimation } = useAnimatedText("Favorite");
   return (
     <>
       <section className="container mx-auto px-2 md:px-10 h-screen flex flex-col items-center justify-center snap-start">
-        <h2 className="text-center text-primary mb-8 text-3xl md:text-[40px] font-jetbrains font-bold">
-          Favorite
-        </h2>
+        <AnimatePresence mode="wait">
+          <motion.h2
+            key={key} // Reset component mỗi 4 giây để lặp animation
+            className="text-center text-primary mb-8 text-3xl md:text-[40px] font-jetbrains font-bold"
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            variants={{
+              visible: { transition: { staggerChildren: 0.1 } },
+              exit: {
+                transition: {
+                  staggerChildren: 0.1,
+                  staggerDirection: -1,
+                  delay: 2,
+                },
+              }, // Chờ 2s rồi biến mất từ cuối về đầu
+            }}
+          >
+            {characters.map(({ char, key }) => (
+              <motion.span
+                key={key}
+                variants={letterAnimation}
+                style={{ display: "inline-block" }}
+              >
+                {char}
+              </motion.span>
+            ))}
+          </motion.h2>
+        </AnimatePresence>
         <div className="w-full">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-2 md:gap-8">
             <div className="p-2 md:p-5 rounded-xl text-white h-[100px] md:h-[170px] cursor-pointer flex flex-col justify-between hover:scale-105 transition duration-300 bg-[#1e1e1e]">

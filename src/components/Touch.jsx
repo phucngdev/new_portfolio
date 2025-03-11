@@ -1,17 +1,124 @@
-import React from "react";
-
+import { Input } from "antd";
+import React, { useState } from "react";
+import emailjs from "emailjs-com";
+const { TextArea } = Input;
 const Touch = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+  const [successMessage, setSuccessMessage] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+
+  // Cập nhật state khi nhập input
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  // Gửi email khi submit
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setLoading(true);
+    setSuccessMessage("");
+    setErrorMessage("");
+
+    const { name, email, subject, message } = formData;
+
+    if (!name || !email || !subject || !message) {
+      setErrorMessage("Please fill in all fields.");
+      setLoading(false);
+      return;
+    }
+
+    try {
+      const response = await emailjs.send(
+        "service_ovi31q5", // Thay bằng service_id từ EmailJS
+        "template_unpz5l3", // Thay bằng template_id từ EmailJS
+        {
+          from_name: name,
+          from_email: email,
+          subject: subject,
+          message: message,
+        },
+        "QDcwjdIvxB98gsoGH" // Thay bằng public_key từ EmailJS
+      );
+
+      if (response.status === 200) {
+        setSuccessMessage("Message sent successfully!");
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        setErrorMessage("Failed to send message. Please try again.");
+      }
+    } catch (error) {
+      setErrorMessage("An error occurred. Please try again later.");
+    }
+
+    setLoading(false);
+  };
   return (
     <>
       <section className="container mx-auto px-2 md:px-10 h-screen flex flex-col items-center justify-center snap-start">
         <h2 className="text-center text-primary mb-8 text-3xl md:text-[40px] font-jetbrains font-bold">
           Get In Touch
         </h2>
-        <div className="">
-          <p className="text-[#b0b0b0] text-[clamp(0.95rem, 3vw, 1.1rem)]">
-            You know i can't show everything on this, right 🫣 ? . Connect with
-            me on socials so we can work on your next big things!
+        <div className="flex flex-col items-center justify-center">
+          <p className="text-[#b0b0b0] text-center text-[clamp(0.95rem, 3vw, 1.1rem)] md:max-w-[50%]">
+            You know i can't show everything on this, right 🫣 ?. Connect with me
+            on socials so we can work on your next big things!
           </p>
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col gap-3 mt-6 md:w-[50%]"
+          >
+            <input
+              type="text"
+              name="name"
+              placeholder="Your Name"
+              value={formData.name}
+              onChange={handleChange}
+              className="bg-[#1e1e1e] placeholder:text-[#b0b0b0] text-white p-2 rounded-md"
+            />
+            <input
+              type="email"
+              name="email"
+              placeholder="Your Email"
+              value={formData.email}
+              onChange={handleChange}
+              className="bg-[#1e1e1e] placeholder:text-[#b0b0b0] text-white p-2 rounded-md"
+            />
+            <input
+              type="text"
+              name="subject"
+              placeholder="Subject"
+              value={formData.subject}
+              onChange={handleChange}
+              className="bg-[#1e1e1e] placeholder:text-[#b0b0b0] text-white p-2 rounded-md"
+            />
+            <textarea
+              name="message"
+              placeholder="Your Message"
+              value={formData.message}
+              onChange={handleChange}
+              rows="4"
+              className="bg-[#1e1e1e] placeholder:text-[#b0b0b0] text-white p-2 rounded-md"
+            />
+            <button
+              type="submit"
+              className="w-full py-2 text-white bg-primary rounded-md mt-2 hover:bg-opacity-80"
+              disabled={loading}
+            >
+              {loading ? "Sending..." : "Send Message"}
+            </button>
+
+            {successMessage && (
+              <p className="text-green-500">{successMessage}</p>
+            )}
+            {errorMessage && <p className="text-red-500">{errorMessage}</p>}
+          </form>
           <div className="flex items-center justify-center gap-5 mt-10">
             <a
               href="mailto:phucnguyen09022003@gmail.com"

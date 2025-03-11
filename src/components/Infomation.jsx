@@ -1,32 +1,71 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import useAnimatedText from "../hooks/useAnimatedText";
 
 const Infomation = () => {
+  const { key, characters, letterAnimation } = useAnimatedText("Hello");
+
   return (
     <>
       <section className="container mx-auto h-screen px-2 md:px-10 flex items-center justify-center snap-start">
         <div className="flex flex-col">
-          <h1 className="text-primary text-[50px] md:text-[72px] font-jetbrains font-bold">
-            Hello
-          </h1>
+          <AnimatePresence mode="wait">
+            <motion.h1
+              key={key} // Reset component mỗi 4 giây để lặp animation
+              className="text-primary text-[50px] md:text-[72px] font-jetbrains font-bold"
+              initial="hidden"
+              animate="visible"
+              exit="exit"
+              variants={{
+                visible: { transition: { staggerChildren: 0.1 } },
+                exit: {
+                  transition: {
+                    staggerChildren: 0.1,
+                    staggerDirection: -1,
+                    delay: 2,
+                  },
+                }, // Chờ 2s rồi biến mất từ cuối về đầu
+              }}
+            >
+              {characters.map(({ char, key }) => (
+                <motion.span
+                  key={key}
+                  variants={letterAnimation}
+                  style={{ display: "inline-block" }}
+                >
+                  {char}
+                </motion.span>
+              ))}
+            </motion.h1>
+          </AnimatePresence>
 
           <h2 className="text-[clamp(2rem,5vw,3rem)] text-primary mb-4 font-jetbrains font-bold">
             My name is Nguyen Minh Phuc
           </h2>
           <p className="text-base md:text-2xl text-[#b0b0b0] font-bold leading-7 md:leading-10">
-            I'm a developer who likes to do{" "}
+            Code like an{" "}
             <span className="animate-gradient bg-[linear-gradient(to_right,#0081a7,#38BDF8,#A7F3D0,#38BDF8,#A7F3D0,#6EE7B7)]  bg-[length:200%_auto] bg-clip-text tracking-tighter text-transparent">
-              different
+              artist
             </span>{" "}
-            and{" "}
+            , optimize like an{" "}
             <span className="animate-gradient bg-[linear-gradient(to_right,#0081a7,#38BDF8,#A7F3D0,#38BDF8,#A7F3D0,#6EE7B7)]  bg-[length:200%_auto] bg-clip-text tracking-tighter text-transparent">
-              cool
+              engineer
             </span>{" "}
-            things, learn from{" "}
+            , and debug like a{" "}
             <span className="animate-gradient bg-[linear-gradient(to_right,#0081a7,#38BDF8,#A7F3D0,#38BDF8,#A7F3D0,#6EE7B7)]  bg-[length:200%_auto] bg-clip-text tracking-tighter text-transparent">
-              great
+              detective
             </span>{" "}
-            people
+            . No{" "}
+            <span className="animate-gradient bg-[linear-gradient(to_right,#0081a7,#38BDF8,#A7F3D0,#38BDF8,#A7F3D0,#6EE7B7)]  bg-[length:200%_auto] bg-clip-text tracking-tighter text-transparent">
+              limits
+            </span>{" "}
+            , only{" "}
+            <span className="animate-gradient bg-[linear-gradient(to_right,#0081a7,#38BDF8,#A7F3D0,#38BDF8,#A7F3D0,#6EE7B7)]  bg-[length:200%_auto] bg-clip-text tracking-tighter text-transparent">
+              solutions!
+            </span>{" "}
+            🚀
           </p>
+
           <div className="mt-8 flex items-center gap-5">
             <a
               href="mailto:phucnguyen09022003@gmail.com"
@@ -138,6 +177,40 @@ const Infomation = () => {
               </svg>
             </a>
           </div>
+          <a
+            href="https://drive.google.com/drive/folders/1JYcxeyMACGFxBSHGKZo-FQSw8abR6ZsK?usp=drive_link"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 w-40 flex items-center justify-between text-white rounded-md mt-8 bg-[#1e1e1e] hover:scale-105 transition duration-500"
+          >
+            <span className="text-white flex items-center gap-2 font-thin">
+              <svg
+                stroke="currentColor"
+                fill="currentColor"
+                strokeWidth={0}
+                viewBox="0 0 512 512"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path d="M224 136V0H24C10.7 0 0 10.7 0 24v464c0 13.3 10.7 24 24 24h336c13.3 0 24-10.7 24-24V160H248c-13.2 0-24-10.8-24-24zm64 236c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-64c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12v8zm0-72v8c0 6.6-5.4 12-12 12H108c-6.6 0-12-5.4-12-12v-8c0-6.6 5.4-12 12-12h168c6.6 0 12 5.4 12 12zm96-114.1v6.1H256V0h6.1c6.4 0 12.5 2.5 17 7l97.9 98c4.5 4.5 7 10.6 7 16.9z" />
+              </svg>
+              My CV
+            </span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              stroke="currentColor"
+              fill="currentColor"
+              height="1em"
+              width="1em"
+              version="1.1"
+              viewBox="0 0 330 330"
+              xml:space="preserve"
+            >
+              <path d="M250.606,154.389l-150-149.996c-5.857-5.858-15.355-5.858-21.213,0.001  c-5.857,5.858-5.857,15.355,0.001,21.213l139.393,139.39L79.393,304.394c-5.857,5.858-5.857,15.355,0.001,21.213  C82.322,328.536,86.161,330,90,330s7.678-1.464,10.607-4.394l149.999-150.004c2.814-2.813,4.394-6.628,4.394-10.606  C255,161.018,253.42,157.202,250.606,154.389z" />
+            </svg>
+          </a>
         </div>
       </section>
     </>

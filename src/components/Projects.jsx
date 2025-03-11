@@ -1,85 +1,161 @@
 import { Image, Modal } from "antd";
 import React, { useEffect, useState } from "react";
+import useAnimatedText from "../hooks/useAnimatedText";
+import { AnimatePresence, motion } from "framer-motion";
 
 const projects = [
   {
-    title: "TEELAB STORE 1",
-    timework: "January 2020 - January 2022",
+    title: "Task Managerment",
+    timework: "February 2025 - Now",
     position: "Fullstack Developer",
     fetures: [
-      "Built front-end applications using ReactJS and TypeScript, focusing on mobile-first development",
-      "Designed and developed REST APIs using Node.js, and implemented database schemas in PostgreSQL",
-      "Built and integrated real-time features using WebSocket for live data updates and notifications",
-      "Handled the full deployment pipeline from development to publishing on both Google Play and App Store platforms",
+      "Task management by status: To Do, In Progress, Review, Done",
+      "Team and member management",
+      "Drag-and-drop task prioritization",
+      "Search, filter, and sort tasks",
+      "User role management",
+      "Real-time messaging and video calls using Socket and ZegoCloud",
+      "Intuitive and user-friendly interface for better work organization and collaboration",
     ],
-    tech: ["ReactJS", "PostgreSQL", "TypeScript", "Nodejs", "Firebase"],
-    github: "https://github.com/phucngdev",
-    live: "https://github.com/phucngdev",
+    tech: [
+      "ReactJS",
+      "Vite",
+      "Antd",
+      "Redux",
+      "Redux toolkit",
+      "Dnd-kit",
+      "ZegoCloud",
+      "Socket",
+      "JWT",
+      "NodeJs",
+      "ExpressJs",
+      "MonggoDB",
+      "Mongoose",
+    ],
+    github: "https://github.com/phucngdev/task_manager",
+    live: "https://task-manager-fawn-seven-48.vercel.app/overview",
     docs: "",
     images: [],
   },
   {
-    title: "TEELAB STORE 2",
-    timework: "January 2020 - January 2022",
+    title: "Teelab Store",
+    timework: "August 2024 - November 2024",
     position: "Fullstack Developer",
     fetures: [
-      "Built front-end applications using ReactJS and TypeScript, focusing on mobile-first development",
-      "Designed and developed REST APIs using Node.js, and implemented database schemas in PostgreSQL",
-      "Built and integrated real-time features using WebSocket for live data updates and notifications",
-      "Handled the full deployment pipeline from development to publishing on both Google Play and App Store platforms",
+      "Browse and filter a wide range of clothing items",
+      "View product details, add to cart or wishlist, and adjust options",
+      "Secure checkout with COD and VNPay",
+      "Manage accounts, orders, and products with full CRUD functionality",
+      "Search and pagination support",
+      "Supports dark/light themes and Vietnamese/English languages",
+      "Real-time admin chat with infinite scrolling via WebSocket",
+      "Image uploads handled via Firebase",
     ],
-    tech: ["ReactJS", "PostgreSQL", "TypeScript", "Nodejs", "Firebase"],
-    github: "https://github.com/phucngdev",
+    tech: [
+      "ReactJs",
+      "Vite",
+      "Antd",
+      "Redux",
+      "Redux toolkit",
+      "Mysql",
+      "Socket",
+      "JWT",
+      "NodeJs",
+      "ExpressJs",
+      "Firebase",
+    ],
+    github: "https://github.com/phucngdev/Teelab_Store",
     live: "",
     docs: "https://github.com/phucngdev",
     images: [],
   },
   {
-    title: "TEELAB STORE 3",
-    timework: "January 2020 - January 2022",
+    title: "Teelab Store V2 - NestJs",
+    timework: "July 2020 - August 2022",
     position: "Fullstack Developer",
     fetures: [
-      "Built front-end applications using ReactJS and TypeScript, focusing on mobile-first development",
-      "Designed and developed REST APIs using Node.js, and implemented database schemas in PostgreSQL",
-      "Built and integrated real-time features using WebSocket for live data updates and notifications",
-      "Handled the full deployment pipeline from development to publishing on both Google Play and App Store platforms",
+      "Browse and filter a wide range of clothing items",
+      "View product details, add to cart or wishlist, and adjust options",
+      "Secure checkout with COD and VNPay",
+      "Manage accounts, orders, and products with full CRUD functionality",
+      "Search and pagination support",
+      "Supports dark/light themes and Vietnamese/English languages",
+      "Real-time admin chat with infinite scrolling via WebSocket",
+      "Image uploads handled via Firebase",
     ],
-    tech: ["ReactJS", "PostgreSQL", "TypeScript", "Nodejs", "Firebase"],
-    github: "https://github.com/phucngdev",
-    live: "https://github.com/phucngdev",
-    docs: "https://github.com/phucngdev",
+    tech: [
+      "ReactJs",
+      "Vite",
+      "Antd",
+      "Redux",
+      "Redux toolkit",
+      "Mysql",
+      "JWT",
+      "NestJs",
+      "Typeorm",
+      "Firebase",
+    ],
+    github: "https://github.com/phucngdev/teelab-v2-nest",
+    live: "",
+    docs: "",
     images: [],
   },
+
   {
     title: "TEELAB STORE 4",
     timework: "January 2020 - January 2022",
     position: "Fullstack Developer",
     fetures: [
-      "Built front-end applications using ReactJS and TypeScript, focusing on mobile-first development",
-      "Designed and developed REST APIs using Node.js, and implemented database schemas in PostgreSQL",
-      "Built and integrated real-time features using WebSocket for live data updates and notifications",
-      "Handled the full deployment pipeline from development to publishing on both Google Play and App Store platforms",
+      "Browse and filter a wide range of clothing items",
+      "View product details, add to cart or wishlist, and adjust options",
+      "Secure checkout with COD and VNPay",
+      "Manage accounts, orders, and products with full CRUD functionality",
+      "Search and pagination support",
+      "Supports dark/light themes and Vietnamese/English languages",
+      "Real-time admin chat with infinite scrolling via WebSocket",
+      "Image uploads handled via Firebase",
     ],
-    tech: ["ReactJS", "PostgreSQL", "TypeScript", "Nodejs", "Firebase"],
+    tech: [
+      "ReactJS",
+      "TypeScript",
+      "Nodejs",
+      "Firebase",
+      "Nodejs",
+      "Firebase",
+      "Firebase",
+      "Firebase",
+    ],
     github: "https://github.com/phucngdev",
     live: "",
     docs: "https://github.com/phucngdev",
     images: [],
   },
   {
-    title: "TEELAB STORE 5",
-    timework: "January 2020 - January 2022",
+    title: "Instargram Clone",
+    timework: "April 2024 - June 2024",
     position: "Fullstack Developer",
     fetures: [
-      "Built front-end applications using ReactJS and TypeScript, focusing on mobile-first development",
-      "Designed and developed REST APIs using Node.js, and implemented database schemas in PostgreSQL",
-      "Built and integrated real-time features using WebSocket for live data updates and notifications",
-      "Handled the full deployment pipeline from development to publishing on both Google Play and App Store platforms",
+      "Share photos with followers",
+      "Apply filters and editing tools to enhance content",
+      "Like, comment, and interact with posts",
+      "Follow friends, celebrities, and influencers",
+      "Send direct messages and start group chats",
     ],
-    tech: ["ReactJS", "PostgreSQL", "TypeScript", "Nodejs", "Firebase"],
-    github: "https://github.com/phucngdev",
+    tech: [
+      "ReactJS",
+      "Vite",
+      "Antd",
+      "Redux",
+      "Redux toolkit",
+      "Socket",
+      "MongoDB",
+      "ExpressJs",
+      "Nodejs",
+      "Firebase",
+    ],
+    github: "https://github.com/phucngdev/instagram",
     live: "",
-    docs: "https://github.com/phucngdev",
+    docs: "",
     images: [],
   },
   {
@@ -92,7 +168,18 @@ const projects = [
       "Built and integrated real-time features using WebSocket for live data updates and notifications",
       "Handled the full deployment pipeline from development to publishing on both Google Play and App Store platforms",
     ],
-    tech: ["ReactJS", "PostgreSQL", "TypeScript", "Nodejs", "Firebase"],
+    tech: [
+      "ReactJS",
+      "Vite",
+      "Antd",
+      "Redux",
+      "Redux toolkit",
+      "Socket",
+      "MongoDB",
+      "ExpressJs",
+      "Nodejs",
+      "Firebase",
+    ],
     github: "https://github.com/phucngdev",
     live: "https://github.com/phucngdev",
     docs: "",
@@ -105,6 +192,8 @@ const Projects = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [open, setOpen] = useState(false);
   const [project, setProject] = useState({});
+  const { key, characters, letterAnimation } =
+    useAnimatedText("Featured Projects");
 
   useEffect(() => {
     // Kiểm tra kích thước màn hình
@@ -302,9 +391,38 @@ const Projects = () => {
         </div>
       </Modal>
       <section className="container mx-auto px-2 md:px-10 h-screen flex flex-col items-center justify-center snap-start">
-        <h2 className="text-center text-primary mb-8 text-3xl md:text-[40px] font-jetbrains font-bold">
-          Featured Projects
-        </h2>
+        <AnimatePresence mode="wait">
+          <motion.h2
+            key={key} // Reset component mỗi 4 giây để lặp animation
+            className="text-center text-primary mb-8 text-3xl md:text-[40px] font-jetbrains font-bold"
+            initial="hidden"
+            animate="visible"
+            exit="exit"
+            variants={{
+              visible: { transition: { staggerChildren: 0.1 } },
+              exit: {
+                transition: {
+                  staggerChildren: 0.1,
+                  staggerDirection: -1,
+                  delay: 2,
+                },
+              }, // Chờ 2s rồi biến mất từ cuối về đầu
+            }}
+          >
+            {characters.map(({ char, key }) => (
+              <motion.span
+                key={key}
+                variants={letterAnimation}
+                style={{
+                  display: "inline-block",
+                  minWidth: char === " " ? "0.3em" : "auto",
+                }}
+              >
+                {char === " " ? "\u00A0" : char}
+              </motion.span>
+            ))}
+          </motion.h2>
+        </AnimatePresence>
         <div className="w-full max-w-full overflow-hidden px-12 md:px-14 relative before:content-[''] before:absolute before:w-[2px] before:h-full before:bg-green-500/25 before:top-0 md:before:z-50 before:left-1/2 before:-translate-x-1/2">
           <div className="absolute left-0 right-0 top-1/2 translate-y-[-50%] flex items-center justify-between z-40">
             <button
@@ -369,7 +487,7 @@ const Projects = () => {
                       index % 2 == 0 ? "md:rounded-s-2xl" : "md:rounded-e-2xl"
                     } ${isMobile ? "rounded-2xl" : ""}`}
                   >
-                    <div className="text-[24px] mb-2 font-bold text-primary">
+                    <div className="text-[18px] md:text-[24px] mb-2 font-bold text-primary">
                       {p.title}
                     </div>
                     <div className="my-2">
@@ -380,7 +498,7 @@ const Projects = () => {
                     <h3 className="text-xl md:text-2xl font-bold mb-4 text-white">
                       {p.position}
                     </h3>
-                    <div className="max-h-[190px] overflow-y-auto md:max-h-none">
+                    <div className="max-h-[200px] min-h-[200px] overflow-y-auto md:max-h-none">
                       <ul className="list-disc list-inside text-[#b0b0b0] text-sm md:text-[16px]">
                         {p.fetures.map((li, index) => (
                           <li key={index} className="marker:text-primary">
@@ -389,8 +507,8 @@ const Projects = () => {
                         ))}
                       </ul>
                     </div>
-                    <div className="flex flex-wrap gap-2 mt-4">
-                      {p.tech.map((t, index) => (
+                    <div className="flex flex-wrap gap-2 mt-4 md:min-h-[70px]">
+                      {p.tech.slice(0, isMobile ? 5 : 11).map((t, index) => (
                         <span
                           key={index}
                           className="px-2 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]"
@@ -398,6 +516,11 @@ const Projects = () => {
                           {t}
                         </span>
                       ))}
+                      {p.tech.length > (isMobile ? 5 : 11) && (
+                        <span className="px-4 py-1 text-sm md:text-base rounded-3xl text-primary bg-[#4caf5015]">
+                          ...
+                        </span>
+                      )}
                     </div>
                     <div className="flex items-center gap-4 mt-4">
                       {p.github && (
